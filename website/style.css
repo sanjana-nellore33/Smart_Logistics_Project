@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263247;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #142d4e, #2563a6);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+nav {
+    background: #10243e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8fc7ff;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+    color: #174b7a;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #2563a6;
+    margin: 18px 0 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #b8c6d8;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 250px;
+}
+
+button {
+    background: #2563a6;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    margin: 10px 6px 5px 0;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #174b7a;
+}
+
+.algorithm-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.algorithm-buttons button {
+    flex: 1;
+    min-width: 150px;
+}
+
+#locationInputs,
+#matrixInputs {
+    margin: 15px 0;
+    overflow-x: auto;
+}
+
+.matrix-table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.matrix-table th,
+.matrix-table td {
+    border: 1px solid #cbd5e1;
+    padding: 7px;
+    text-align: center;
+}
+
+.matrix-table input {
+    width: 75px;
+    max-width: none;
+}
+
+#result {
+    background: #edf5ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    min-height: 100px;
+}
+
+#errorMessage {
+    color: #c62828;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+footer {
+    background: #10243e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}

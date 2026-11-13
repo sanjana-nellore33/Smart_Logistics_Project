@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Logistics - Algorithm Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Smart Logistics</h1>
+        <p>Algorithm Explorer - Delivery Route Optimization</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#problem">Problem</a>
+        <a href="#input">Input Data</a>
+        <a href="#algorithms">Algorithms</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome to Smart Logistics</h2>
+            <p>
+                Smart Logistics is a delivery route optimization system
+                that uses four different algorithmic approaches to find
+                the shortest path between delivery locations.
+            </p>
+        </section>
+
+        <section id="problem">
+            <h2>Problem Description</h2>
+            <p>
+                Delivery companies need to find efficient routes
+                between locations to reduce travel distance and cost.
+                This application compares four algorithms that solve
+                the shortest delivery path problem.
+            </p>
+
+            <h3>Why is it important?</h3>
+            <ul>
+                <li>Reduces delivery distance.</li>
+                <li>Saves fuel and transportation costs.</li>
+                <li>Improves delivery efficiency.</li>
+                <li>Helps compare different algorithms.</li>
+            </ul>
+
+            <h3>Project Objective</h3>
+            <p>
+                Calculate the shortest path between a starting
+                location and a destination using four approaches.
+            </p>
+        </section>
+
+        <section id="input">
+            <h2>Enter Delivery Network</h2>
+
+            <p>
+                Enter the number of locations and the distance
+                between connected locations.
+            </p>
+
+            <label for="locationCount">Number of Locations:</label>
+            <input type="number" id="locationCount"
+                   min="2" max="8" value="4">
+
+            <div id="locationInputs"></div>
+
+            <h3>Distance Matrix</h3>
+            <p>
+                Enter distances between locations.
+                Use 0 for the same location and leave 0
+                where no direct road exists.
+            </p>
+
+            <div id="matrixInputs"></div>
+
+            <button id="generateButton" type="button">
+                Generate Input Fields
+            </button>
+
+            <button id="solveButton" type="button">
+                Solve Route
+            </button>
+
+            <p id="errorMessage"></p>
+        </section>
+
+        <section id="algorithms">
+            <h2>Choose an Algorithm</h2>
+
+            <div class="algorithm-buttons">
+                <button data-algorithm="brute">
+                    Brute Force
+                </button>
+
+                <button data-algorithm="divide">
+                    Divide and Conquer
+                </button>
+
+                <button data-algorithm="dynamic">
+                    Dynamic Programming
+                </button>
+
+                <button data-algorithm="greedy">
+                    Greedy Approach
+                </button>
+            </div>
+
+            <div id="result">
+                <h3>Algorithm Results</h3>
+                <p>Select an algorithm after entering your data.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Smart Logistics - Algorithm Explorer Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
